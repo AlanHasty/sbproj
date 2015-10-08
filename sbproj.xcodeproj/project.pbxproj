@@ -16,6 +16,10 @@
 		E787DC9F1BC612B700CEB80D /* sbprojUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E787DC9E1BC612B700CEB80D /* sbprojUITests.swift */; };
 		E787DCAC1BC61F7600CEB80D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E787DC851BC612B700CEB80D /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 		E787DCAD1BC61F7600CEB80D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E787DC851BC612B700CEB80D /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		E787DCB41BC62EB900CEB80D /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E787DCB21BC62EB900CEB80D /* PlayersViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E787DCB51BC62EB900CEB80D /* PlayersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E787DCB31BC62EB900CEB80D /* PlayersViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		E787DCB71BC686A300CEB80D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E787DCB61BC686A300CEB80D /* Player.swift */; settings = {ASSET_TAGS = (); }; };
+		E787DCB91BC6876200CEB80D /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E787DCB81BC6876200CEB80D /* SampleData.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		E787DC9A1BC612B700CEB80D /* sbprojUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sbprojUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E787DC9E1BC612B700CEB80D /* sbprojUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sbprojUITests.swift; sourceTree = "<group>"; };
 		E787DCA01BC612B700CEB80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E787DCB21BC62EB900CEB80D /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		E787DCB31BC62EB900CEB80D /* PlayersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayersViewController.xib; sourceTree = "<group>"; };
+		E787DCB61BC686A300CEB80D /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		E787DCB81BC6876200CEB80D /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,10 @@
 				E787DC851BC612B700CEB80D /* Assets.xcassets */,
 				E787DC871BC612B700CEB80D /* LaunchScreen.storyboard */,
 				E787DC8A1BC612B700CEB80D /* Info.plist */,
+				E787DCB21BC62EB900CEB80D /* PlayersViewController.swift */,
+				E787DCB31BC62EB900CEB80D /* PlayersViewController.xib */,
+				E787DCB61BC686A300CEB80D /* Player.swift */,
+				E787DCB81BC6876200CEB80D /* SampleData.swift */,
 			);
 			path = sbproj;
 			sourceTree = "<group>";
@@ -231,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E787DC891BC612B700CEB80D /* LaunchScreen.storyboard in Resources */,
+				E787DCB51BC62EB900CEB80D /* PlayersViewController.xib in Resources */,
 				E787DC861BC612B700CEB80D /* Assets.xcassets in Resources */,
 				E787DC841BC612B700CEB80D /* Main.storyboard in Resources */,
 			);
@@ -259,8 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E787DCB71BC686A300CEB80D /* Player.swift in Sources */,
 				E787DC811BC612B700CEB80D /* ViewController.swift in Sources */,
 				E787DC7F1BC612B700CEB80D /* AppDelegate.swift in Sources */,
+				E787DCB91BC6876200CEB80D /* SampleData.swift in Sources */,
+				E787DCB41BC62EB900CEB80D /* PlayersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +501,7 @@
 				E787DCA51BC612B700CEB80D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E787DCA61BC612B700CEB80D /* Build configuration list for PBXNativeTarget "sbprojTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +510,7 @@
 				E787DCA81BC612B700CEB80D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E787DCA91BC612B700CEB80D /* Build configuration list for PBXNativeTarget "sbprojUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +519,7 @@
 				E787DCAB1BC612B700CEB80D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
