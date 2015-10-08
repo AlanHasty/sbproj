@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VBT-7t-zE3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Gestures-->
@@ -59,32 +60,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlayerCell" textLabel="m7Z-re-GTO" detailTextLabel="qMz-Lg-Ndq" imageView="nqy-PQ-pbf" style="IBUITableViewCellStyleSubtitle" id="wAX-si-yH0">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlayerCell" rowHeight="60" id="wAX-si-yH0">
+                                <rect key="frame" x="0.0" y="92" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wAX-si-yH0" id="YtF-5B-fVE">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="59"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m7Z-re-GTO">
-                                            <rect key="frame" x="111" y="5" width="32" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qMz-Lg-Ndq">
-                                            <rect key="frame" x="111" y="25" width="41" height="14"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="1Stars" id="nqy-PQ-pbf">
-                                            <rect key="frame" x="15" y="14" width="81" height="15"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vka-0X-4Wy">
+                                            <rect key="frame" x="39" y="4" width="275" height="51"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="y4i-Np-0Yf">
+                                                    <rect key="frame" x="0.0" y="7" width="174" height="37"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDm-mo-yuB">
+                                                            <rect key="frame" x="0.0" y="0.0" width="174" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.25646008691249889" green="0.6248619002525253" blue="0.15134565005258918" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jP1-HG-3A7">
+                                                            <rect key="frame" x="0.0" y="21" width="174" height="16"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <imageView userInteractionEnabled="NO" tag="102" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tg7-M0-rWA">
+                                                    <rect key="frame" x="194" y="0.0" width="81" height="51"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="81" id="Lsy-eZ-utE"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tg7-M0-rWA" firstAttribute="top" secondItem="vka-0X-4Wy" secondAttribute="top" id="TZz-1p-iDM"/>
+                                                <constraint firstItem="tg7-M0-rWA" firstAttribute="leading" secondItem="y4i-Np-0Yf" secondAttribute="trailing" constant="20" id="Z9U-xX-ldQ"/>
+                                                <constraint firstItem="tg7-M0-rWA" firstAttribute="trailing" secondItem="vka-0X-4Wy" secondAttribute="trailingMargin" constant="20" id="nU8-ro-IqY"/>
+                                            </constraints>
+                                        </stackView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="vka-0X-4Wy" firstAttribute="centerY" secondItem="YtF-5B-fVE" secondAttribute="centerY" id="TUa-Hq-C9u"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="vka-0X-4Wy" secondAttribute="trailing" constant="20" id="ab9-Tk-dtq"/>
+                                        <constraint firstItem="vka-0X-4Wy" firstAttribute="top" secondItem="YtF-5B-fVE" secondAttribute="topMargin" constant="-4" id="dpU-FK-gvw"/>
+                                        <constraint firstAttribute="trailing" secondItem="vka-0X-4Wy" secondAttribute="trailing" constant="157" id="hrA-H1-KM3"/>
+                                        <constraint firstItem="vka-0X-4Wy" firstAttribute="leading" secondItem="YtF-5B-fVE" secondAttribute="leadingMargin" constant="31" id="kQF-IN-cHc"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -99,7 +122,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbv-Sk-6XH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="180" y="-476"/>
+            <point key="canvasLocation" x="179.5" y="-476.5"/>
         </scene>
         <!--Rock Stars-->
         <scene sceneID="Pe9-51-FIz">
@@ -122,7 +145,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1Stars" width="81" height="15"/>
         <image name="Gestures" width="30" height="30"/>
         <image name="Players" width="30" height="30"/>
     </resources>
