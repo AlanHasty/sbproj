@@ -39,10 +39,7 @@ class PlayersViewController: UITableViewController {
         return players.count
     }
 
-    func imageForRating(rating:Int) -> UIImage? {
-        let imageName = "\(rating)Stars"
-        return UIImage(named: imageName)
-    }
+
     
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -64,22 +61,31 @@ class PlayersViewController: UITableViewController {
 //            return cell
 //    }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell", forIndexPath: indexPath) //1
-        
-        let player = players[indexPath.row] as Player //2
-        
-        if let nameLabel = cell.viewWithTag(100) as? UILabel { //3
-            nameLabel.text = player.name
-        }
-        if let gameLabel = cell.viewWithTag(101) as? UILabel {
-            gameLabel.text = player.game
-        }
-        if let ratingImageView = cell.viewWithTag(102) as? UIImageView {
-            ratingImageView.image = self.imageForRating(player.rating)
-        }
-        return cell
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)
+        -> UITableViewCell {
+            let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell", forIndexPath: indexPath)
+                as! PlayerCell
+            
+            let player = players[indexPath.row] as Player
+            cell.player = player
+            return cell
     }
+//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell", forIndexPath: indexPath) //1
+//        
+//        let player = players[indexPath.row] as Player //2
+//        
+//        if let nameLabel = cell.viewWithTag(100) as? UILabel { //3
+//            nameLabel.text = player.name
+//        }
+//        if let gameLabel = cell.viewWithTag(101) as? UILabel {
+//            gameLabel.text = player.game
+//        }
+//        if let ratingImageView = cell.viewWithTag(102) as? UIImageView {
+//            ratingImageView.image = self.imageForRating(player.rating)
+//        }
+//        return cell
+//    }
     
     /*
     // Override to support editing the table view.

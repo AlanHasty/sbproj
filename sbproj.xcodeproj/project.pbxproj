@@ -20,6 +20,7 @@
 		E787DCB51BC62EB900CEB80D /* PlayersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E787DCB31BC62EB900CEB80D /* PlayersViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		E787DCB71BC686A300CEB80D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E787DCB61BC686A300CEB80D /* Player.swift */; settings = {ASSET_TAGS = (); }; };
 		E787DCB91BC6876200CEB80D /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E787DCB81BC6876200CEB80D /* SampleData.swift */; settings = {ASSET_TAGS = (); }; };
+		E787DCBB1BC69A2400CEB80D /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E787DCBA1BC69A2400CEB80D /* PlayerCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		E787DCB31BC62EB900CEB80D /* PlayersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayersViewController.xib; sourceTree = "<group>"; };
 		E787DCB61BC686A300CEB80D /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		E787DCB81BC6876200CEB80D /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		E787DCBA1BC69A2400CEB80D /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				E787DCB31BC62EB900CEB80D /* PlayersViewController.xib */,
 				E787DCB61BC686A300CEB80D /* Player.swift */,
 				E787DCB81BC6876200CEB80D /* SampleData.swift */,
+				E787DCBA1BC69A2400CEB80D /* PlayerCell.swift */,
 			);
 			path = sbproj;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E787DCBB1BC69A2400CEB80D /* PlayerCell.swift in Sources */,
 				E787DCB71BC686A300CEB80D /* Player.swift in Sources */,
 				E787DC811BC612B700CEB80D /* ViewController.swift in Sources */,
 				E787DC7F1BC612B700CEB80D /* AppDelegate.swift in Sources */,

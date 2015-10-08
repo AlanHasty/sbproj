@@ -60,7 +60,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlayerCell" rowHeight="60" id="wAX-si-yH0">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlayerCell" rowHeight="60" id="wAX-si-yH0" customClass="PlayerCell" customModule="sbproj" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wAX-si-yH0" id="YtF-5B-fVE">
@@ -73,7 +73,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="y4i-Np-0Yf">
                                                     <rect key="frame" x="0.0" y="7" width="174" height="37"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDm-mo-yuB">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDm-mo-yuB">
                                                             <rect key="frame" x="0.0" y="0.0" width="174" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.25646008691249889" green="0.6248619002525253" blue="0.15134565005258918" alpha="1" colorSpace="calibratedRGB"/>
@@ -90,25 +90,28 @@
                                                 <imageView userInteractionEnabled="NO" tag="102" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tg7-M0-rWA">
                                                     <rect key="frame" x="194" y="0.0" width="81" height="51"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="81" id="Lsy-eZ-utE"/>
+                                                        <constraint firstAttribute="width" constant="81" id="3KU-E6-iYV"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="tg7-M0-rWA" firstAttribute="top" secondItem="vka-0X-4Wy" secondAttribute="top" id="TZz-1p-iDM"/>
-                                                <constraint firstItem="tg7-M0-rWA" firstAttribute="leading" secondItem="y4i-Np-0Yf" secondAttribute="trailing" constant="20" id="Z9U-xX-ldQ"/>
-                                                <constraint firstItem="tg7-M0-rWA" firstAttribute="trailing" secondItem="vka-0X-4Wy" secondAttribute="trailingMargin" constant="20" id="nU8-ro-IqY"/>
+                                                <constraint firstItem="tg7-M0-rWA" firstAttribute="top" secondItem="vka-0X-4Wy" secondAttribute="top" id="0nI-Sa-JYs"/>
+                                                <constraint firstItem="tg7-M0-rWA" firstAttribute="leading" secondItem="y4i-Np-0Yf" secondAttribute="trailing" constant="20" id="iF9-1w-Hgx"/>
                                             </constraints>
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="vka-0X-4Wy" firstAttribute="centerY" secondItem="YtF-5B-fVE" secondAttribute="centerY" id="TUa-Hq-C9u"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="vka-0X-4Wy" secondAttribute="trailing" constant="20" id="ab9-Tk-dtq"/>
-                                        <constraint firstItem="vka-0X-4Wy" firstAttribute="top" secondItem="YtF-5B-fVE" secondAttribute="topMargin" constant="-4" id="dpU-FK-gvw"/>
-                                        <constraint firstAttribute="trailing" secondItem="vka-0X-4Wy" secondAttribute="trailing" constant="157" id="hrA-H1-KM3"/>
-                                        <constraint firstItem="vka-0X-4Wy" firstAttribute="leading" secondItem="YtF-5B-fVE" secondAttribute="leadingMargin" constant="31" id="kQF-IN-cHc"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="vka-0X-4Wy" secondAttribute="trailing" constant="20" id="8hG-de-ogo"/>
+                                        <constraint firstItem="vka-0X-4Wy" firstAttribute="leading" secondItem="YtF-5B-fVE" secondAttribute="leadingMargin" constant="31" id="JVn-8R-Q6l"/>
+                                        <constraint firstItem="vka-0X-4Wy" firstAttribute="top" secondItem="YtF-5B-fVE" secondAttribute="topMargin" constant="-4" id="Ycb-pQ-7Zf"/>
+                                        <constraint firstItem="vka-0X-4Wy" firstAttribute="centerY" secondItem="YtF-5B-fVE" secondAttribute="centerY" id="ftH-Fc-C0c"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="gameLabel" destination="jP1-HG-3A7" id="rFk-D9-koc"/>
+                                    <outlet property="nameLabel" destination="aDm-mo-yuB" id="xwr-qO-ff4"/>
+                                    <outlet property="ratingImageView" destination="tg7-M0-rWA" id="sPk-Bq-aHH"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
