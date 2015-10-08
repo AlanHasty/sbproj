@@ -14,6 +14,8 @@
 		E787DC891BC612B700CEB80D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E787DC871BC612B700CEB80D /* LaunchScreen.storyboard */; };
 		E787DC941BC612B700CEB80D /* sbprojTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E787DC931BC612B700CEB80D /* sbprojTests.swift */; };
 		E787DC9F1BC612B700CEB80D /* sbprojUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E787DC9E1BC612B700CEB80D /* sbprojUITests.swift */; };
+		E787DCAC1BC61F7600CEB80D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E787DC851BC612B700CEB80D /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		E787DCAD1BC61F7600CEB80D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E787DC851BC612B700CEB80D /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -238,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E787DCAC1BC61F7600CEB80D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E787DCAD1BC61F7600CEB80D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
